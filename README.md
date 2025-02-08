@@ -25,7 +25,7 @@ pip install matplotlib pandas requests sqlite3 tkinter
 import requests
 
 def fetch_stock_data(symbol, api_key):
-    url = f"https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={symbol}&interval=5min&apikey={api_key}"
+  
     response = requests.get(url)
     data = response.json()
     return data
